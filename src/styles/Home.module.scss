@@ -1,0 +1,106 @@
+$primary-color: red;
+
+.container {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 2.5rem 0;
+  max-width: 800px;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 2.5em;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 100px;
+} 
+
+.posts {
+  list-style: none;
+  padding: 0;
+  margin: 4em 0;
+
+  li {
+    margin-bottom: 3em;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.postContent {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+
+.postDate {
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 18px;
+  color: #383838;
+  font-weight: 500;
+}
+
+.inputContent {
+  width: 100%;
+  padding: 1em;
+  font-size: 1.4em;
+  font-family: 'Inter';
+  min-height: 5em;
+  border: 2px solid #212121;
+  border-radius: 6px;
+}
+
+.addButton {
+  background: linear-gradient(0deg, #8F00FF, #8F00FF), #FFFFFF;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  padding: 0.5em 0.8em;
+  font-size: 1.2em;
+  margin-top: 0.2em;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
