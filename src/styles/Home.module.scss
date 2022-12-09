@@ -31,7 +31,7 @@ $primary-color: red;
   padding: 0;
   margin: 4em 0;
 
-  li {
+  & > li {
     margin-bottom: 3em;
     
     &:last-child {
@@ -47,42 +47,6 @@ $primary-color: red;
       margin-bottom: 0;
     }
   }
-}
-
-.postContent {
-  font-family: 'Inter', sans-serif;
-  font-size: 40px;
-  line-height: 40px;
-  margin-bottom: 0.5em;
-  font-weight: 500;
-}
-
-.postDate {
-  font-family: 'Inter';
-  font-weight: 300;
-  font-size: 18px;
-  color: #383838;
-  font-weight: 500;
-}
-
-.inputContent {
-  width: 100%;
-  padding: 1em;
-  font-size: 1.4em;
-  font-family: 'Inter';
-  min-height: 5em;
-  border: 2px solid #212121;
-  border-radius: 6px;
-}
-
-.addButton {
-  background: linear-gradient(0deg, #8F00FF, #8F00FF), #FFFFFF;
-  border-radius: 3px;
-  color: white;
-  border: none;
-  padding: 0.5em 0.8em;
-  font-size: 1.2em;
-  margin-top: 0.2em;
 }
 
 @media (max-width: 600px) {

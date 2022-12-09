@@ -1,0 +1,50 @@
+.bio {
+    font-family: 'Inter', sans-serif;
+}
+
+.bioName {
+    font-weight:500;
+    color: #8F00FF;
+    font-size: 70px;
+    margin: 0;
+    font-weight: 800;
+    display: inline-block;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.bioTagline {
+    color: #333333;
+    margin-top: 0.2em;
+    margin-bottom: 0.4em;
+    font-size: 40px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.bioRole {
+    margin: 0;
+    font-size: 25px;
+}
+
+.bioImage {
+    img {
+        border-radius: 50%;
+        width: 15em;
+        height: auto;
+    }
+    
+}
+
+.bio {
+    display: flex;
+}
+
+.bioContent {
+    margin-left: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width:100vh;
+}
