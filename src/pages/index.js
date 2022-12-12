@@ -5,7 +5,8 @@ import Postform from "../components/Postform";
 import styles from "../styles/Home.module.scss";
 import useAuth from "../hooks/useAuth";
 
-export default function Home() {
+export default function Home({ posts }) {
+  console.log("posts", posts);
   const { user, logIn, logOut } = useAuth();
   console.log("user", user);
   return (
@@ -44,18 +45,17 @@ export default function Home() {
           </li>
           <li>
             <Post
-              content="I'm working in Figma, for the first time as a designer."
+              content="I worked on UseContext hook in this project."
               date="9-12-2022"
             />
           </li>
           <li>
             <Post
-              content="I'm working in Figma, for the first time as a designer."
+              content="Also learnt about netlify authentication and implementd login with google"
               date="9-12-2022"
             />
           </li>
         </ul>
-        {user && <Postform />}
       </main>
     </div>
   );
